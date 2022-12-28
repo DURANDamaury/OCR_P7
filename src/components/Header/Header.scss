@@ -1,0 +1,22 @@
+.header
+    {
+        height: 47px;
+        margin: 20px;
+        line-height: 47px;
+        display: flex;
+        justify-content: space-between;
+    &_logo
+        {
+            max-height: 100%;
+        }
+    }
+
+.header a
+    {
+        margin-left: 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+        vertical-align: middle;
+        color: #FF6060;
+    }
+
