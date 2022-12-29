@@ -1,0 +1,25 @@
+@import "../../styles/Variables.scss";
+
+section
+    {
+        margin: 21px;
+    }
+
+
+//css pour desktop
+@media screen and (min-width: $desktop)
+{
+section
+    {
+    width: auto;
+    margin: 3% 100px 0px 100px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    }
+}

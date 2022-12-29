@@ -1,3 +1,5 @@
+@import "../../styles/Variables.scss";
+
 .header
     {
         height: 47px;
@@ -9,14 +11,42 @@
         {
             max-height: 100%;
         }
+    a
+        {
+            margin-left: 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            vertical-align: middle;
+            color: #FF6060;
+            text-decoration: none;
+        }
     }
 
-.header a
+
+//css pour desktop
+@media screen and (min-width: $desktop)
+
+{
+    .header
     {
-        margin-left: 10px;
-        font-size: 12px;
-        text-transform: uppercase;
-        vertical-align: middle;
-        color: #FF6060;
+        height: 68px;
+        margin: 40px 100px 0px 100px;
+        line-height: 47px;
+        display: flex;
+        justify-content: space-between;
+    &_logo
+        {
+            max-height: 100%;
+        }
+    a
+        {
+            margin-left: 57px;
+            font-weight: 500;
+            font-size: 24px;
+            text-transform: uppercase;
+            vertical-align: middle;
+            color: #FF6060;
+            text-decoration: none;
+        }
     }
-
+}
