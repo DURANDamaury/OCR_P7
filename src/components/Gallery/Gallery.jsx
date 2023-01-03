@@ -9,8 +9,8 @@ function Gallery()
         return (
             <section>
                 {
-                Datas.map((Logement,index) => (
-                    <Thumb value={`${Logement.id}`} />
+                Datas.map((Logement) => (
+                    <Thumb key={Logement.id} value={`${Logement.id}`} />
                 ))
                 }
             </section>
