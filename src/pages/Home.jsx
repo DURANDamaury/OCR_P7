@@ -5,10 +5,11 @@ import '../styles/Home.css'
 
 function Home() 
   {
+    const BannerTxt = "Chez vous, partout et ailleurs"
     return (
     <>
       <main>
-        <Banner img={BannerImg}/>
+        <Banner img={BannerImg} txt={BannerTxt} />
         <Gallery/>
       </main>
     </>

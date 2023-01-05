@@ -7,7 +7,7 @@ import Datas from "../../datas/logements.json"
 function Gallery()
     {
         return (
-            <section>
+            <section className='Gallery'>
                 {
                 Datas.map((Logement) => (
                     <Thumb key={Logement.id} value={`${Logement.id}`} />

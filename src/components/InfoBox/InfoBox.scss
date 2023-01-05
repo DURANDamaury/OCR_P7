@@ -1,0 +1,83 @@
+@import "../../styles/Variables.scss";
+
+.AboutBoxs
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+.InfoBox
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #F6F6F6;
+        border-radius: 5px;
+        &_title
+            {
+                background-color: #FF6060;
+                color: white;
+                border-radius: 5px;
+                padding-left: 3%;
+                padding-right: 3%;
+                height: 30px;
+
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 142.6%;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button 
+                    {
+                        background-color: #FF6060;
+                        border: none;
+                        padding: 0;
+                    }
+            }
+        &_txt
+            {
+                border-radius: 0 0 5px 5px;
+                color: #FF6060;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 142.6%;
+                text-align: left;
+                padding: 3%;
+            }
+    }
+
+//css pour desktop
+@media screen and (min-width: $desktop)
+{
+.AboutBoxs
+    {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+.InfoBox
+    {
+        
+        margin-bottom: 35px;
+        &_title
+            {
+                height: 47px;
+                font-size: 24px;
+                padding-left: 1%;
+                padding-right: 1%;
+
+                button img
+                    {
+                        width: 24px;
+                    }
+
+            }
+        &_txt
+            {
+                font-size: 24px;
+            }
+    }
+}

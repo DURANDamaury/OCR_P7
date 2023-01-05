@@ -28,6 +28,11 @@
                     color: white;
                 }
             }
+        :hover
+            {
+                border: solid 2px black;
+                box-shadow: inset -10px 10px 23px 0px #303030, inset 10px -10px 23px 0px #303030;
+            }
     }
 
 @media screen and (min-width: $desktop)
