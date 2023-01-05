@@ -10,11 +10,11 @@
     {
         width: 100%;
         margin-bottom: 20px;
-        background-color: #F6F6F6;
+        background-color: $grey;
         border-radius: 5px;
         &_title
             {
-                background-color: #FF6060;
+                background-color: $pink;
                 color: white;
                 border-radius: 5px;
                 padding-left: 3%;
@@ -32,7 +32,7 @@
 
                 button 
                     {
-                        background-color: #FF6060;
+                        background-color: $pink;
                         border: none;
                         padding: 0;
                     }
@@ -40,7 +40,7 @@
         &_txt
             {
                 border-radius: 0 0 5px 5px;
-                color: #FF6060;
+                color: $pink;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 142.6%;
@@ -78,6 +78,8 @@
         &_txt
             {
                 font-size: 24px;
+                padding: 1%;
+                padding-top: 2%;
             }
     }
 }

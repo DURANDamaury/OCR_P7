@@ -1,0 +1,37 @@
+@import "../styles/Variables.scss";
+
+.Logo404
+    {
+        font-weight: 700;
+        font-size: 96px;
+        color: $pink;
+    }
+.WarningMsg
+    {
+        font-weight: 500;
+        font-size: 18px;
+        color: $pink;
+    }
+.LinkFrom404
+    {
+        font-weight: 500;
+        font-size: 14px;
+        color: $pink;
+    }
+
+
+@media screen and (min-width: $desktop)
+{
+.Logo404
+    {
+        font-size: 288px;
+    }    
+.WarningMsg
+    {
+        font-size: 36px;
+    }
+.LinkFrom404
+    {
+        font-size: 18px;
+    }
+}
