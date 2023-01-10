@@ -1,7 +1,7 @@
-import Banner from '../components/Banner/Banner'
-import BannerImg from '../components/Banner/Assets/Banner_APropos.jpg'
-import InfoBox from '../components/InfoBox/InfoBox'
-import AboutData from '../components/InfoBox/Datas/AboutData.json'
+import Banner from '../../components/Banner/Banner'
+import BannerImg from '../../components/Banner/Assets/Banner_APropos.jpg'
+import InfoBox from '../../components/InfoBox/InfoBox'
+import AboutData from '../../components/InfoBox/Datas/AboutData.json'
 
 function About() 
   {

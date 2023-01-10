@@ -1,7 +1,7 @@
-import Banner from '../components/Banner/Banner'
-import BannerImg from '../components/Banner/Assets/Banner_Home.jpg'
-import Gallery from '../components/Gallery/Gallery'
-import '../styles/Home.css'
+import Banner from '../../components/Banner/Banner'
+import BannerImg from '../../components/Banner/Assets/Banner_Home.jpg'
+import Gallery from '../../components/Gallery/Gallery'
+import './home.css'
 
 function Home() 
   {

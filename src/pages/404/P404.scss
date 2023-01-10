@@ -1,0 +1,52 @@
+@import "../../styles/Variables.scss";
+.Section404_bloc
+    {
+        width: 260px;
+        margin: auto;
+        text-align: center;
+        &_Logo
+            {
+                font-weight: 700;
+                font-size: 96px;
+                color: $pink;
+            }
+        &_Msg
+            {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 142.6%;
+                color: $pink;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+        &_Link
+            {
+                font-weight: 500;
+                font-size: 14px;
+                color: $pink;
+            }
+    }
+
+
+
+
+@media screen and (min-width: $desktop)
+{
+.Section404_bloc
+    {
+        width: auto;
+        &_Logo
+            {
+                font-size: 288px;
+            }    
+        &_Msg
+            {
+                font-size: 36px;
+            }
+        &_Link
+            {
+                font-size: 18px;
+            }
+    }
+}

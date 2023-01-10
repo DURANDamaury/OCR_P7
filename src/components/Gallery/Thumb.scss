@@ -7,6 +7,7 @@
         margin-top: 6%;
         border-radius: 10px;
         background-size: cover;
+        
         &_title
             {
                 position: relative;
@@ -14,26 +15,26 @@
                 height: 100%;
                 background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
                 border-radius: 10px;
-            &_txt
-                {
-                    position: absolute;
-                    bottom: 0;
-                    box-sizing: border-box;
-                    padding: 6%;
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 18px;
-                    line-height: 142.6%;
-                    color: white;
-                }
-            }
-        :hover
+                &_txt
             {
-                border: solid 2px black;
-                box-shadow: inset -10px 10px 23px 0px #303030, inset 10px -10px 23px 0px #303030;
+                position: absolute;
+                bottom: 0;
+                box-sizing: border-box;
+                padding: 6%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 142.6%;
+                color: white;
             }
+            }
+        
     }
+.Thumb:hover
+{
+    box-shadow: inset -10px 10px 23px 0px #303030, inset 10px -10px 23px 0px #303030;
+}
 
 @media screen and (min-width: $desktop)
 {
@@ -42,29 +43,7 @@
         width: 340px;        
         height: 340px;
         border-radius: 10px;
-        background-size: cover;
         margin: 0;
         margin-bottom: 50px;
-        &_title
-            {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-                border-radius: 10px;
-            &_txt
-                {
-                    position: absolute;
-                    bottom: 0;
-                    box-sizing: border-box;
-                    padding: 6%;
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 18px;
-                    line-height: 142.6%;
-                    color: white;
-                }
-            }
     }
 }
