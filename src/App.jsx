@@ -1,5 +1,5 @@
 import {Routes, Route} from "react-router-dom";
-import { useEffect } from "react";
+
 //
 import Home from './pages/home/home';
 import Logement from './pages/logements/Logement';
@@ -9,12 +9,9 @@ import P404 from './pages/404/404';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-import Datas from "./datas/logements.json"
 
 function App()
     {
-
-
     return(
         <div className="App">
             <Header/>

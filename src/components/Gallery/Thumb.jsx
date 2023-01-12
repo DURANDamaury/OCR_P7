@@ -1,18 +1,19 @@
 import './Thumb.scss';
-import Datas from "../../datas/logements.json"
+import { Link } from 'react-router-dom'
 
 function Thumb(props)
     {
-        
-        const Logement = Datas.find(Logement => Logement.id === props.value)
-
+        const id = props.key;
+        const cover = props.cover;
+        const title = props.title;
 
         return (
-            <div className="Thumb" style={{backgroundImage: `url(${Logement.cover})`}}>
-                <div className="Thumb_title">
-                    <div className="Thumb_title_txt">{Logement.title}</div>
+            <Link to={`/logement/${id}`} className="Thumb" style={{backgroundImage: `url(${cover})`}}>
+                <div className="Thumb_title" >
+                
+                    <div className="Thumb_title_txt">{title}</div>
                 </div>
-            </div>
+            </Link>
         )
     }
 
