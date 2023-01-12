@@ -1,12 +1,8 @@
 import './Thumb.scss';
 import { Link } from 'react-router-dom'
 
-function Thumb(props)
+function Thumb({id, cover,title})
     {
-        const id = props.key;
-        const cover = props.cover;
-        const title = props.title;
-
         return (
             <Link to={`/logement/${id}`} className="Thumb" style={{backgroundImage: `url(${cover})`}}>
                 <div className="Thumb_title" >

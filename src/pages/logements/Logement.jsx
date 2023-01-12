@@ -1,9 +1,12 @@
 
-import Header from '../../components/Header/Header'
+import { useParams } from 'react-router-dom';
 
 function Logement() 
   {
-    return <Header/>
+    const { id } = useParams()
+    return (
+        <div>{id}</div>
+    )
   }
 
 export default Logement;

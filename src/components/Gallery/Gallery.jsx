@@ -22,7 +22,7 @@ function Gallery()
             <section className='Gallery'>
                 {
                 housingDatas.map((housing) => (
-                    <Thumb key={housing.id} cover={housing.cover} title={housing.title} />
+                    <Thumb key={housing.id} id={housing.id} cover={housing.cover} title={housing.title} />
                 ))
                 }
            </section>
