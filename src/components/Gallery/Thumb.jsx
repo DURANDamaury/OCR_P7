@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Thumb({id, cover,title})
     {
         return (
-            <Link to={`/logement/${id}`} className="Thumb" style={{backgroundImage: `url(${cover})`}}>
+            <Link to={`/housing/${id}`} className="Thumb" style={{backgroundImage: `url(${cover})`}}>
                 <div className="Thumb_title" >
                 
                     <div className="Thumb_title_txt">{title}</div>

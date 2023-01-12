@@ -1,7 +1,7 @@
 
 import { useParams } from 'react-router-dom';
 
-function Logement() 
+function Housing() 
   {
     const { id } = useParams()
     return (
@@ -9,4 +9,4 @@ function Logement()
     )
   }
 
-export default Logement;
+export default Housing;
