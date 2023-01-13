@@ -1,0 +1,59 @@
+@import "../../styles/Variables.scss";
+
+
+@keyframes progress_bar {
+    0% {width: 0%;}
+    100% {width: 100%}
+}
+
+.ThumbLoader
+    {
+        width: 100%;        
+        height: 255px; 
+        margin-top: 6%;
+        border-radius: 10px;
+        background-size: cover;
+        position: relative;
+        
+        &_title
+            {
+                position: absolute;
+                height: 100%;
+                background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+                border-radius: 10px;
+                animation: progress_bar infinite 5s linear;
+                border-right: 1px solid $pink;
+
+                
+                &_txt
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 6%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 142.6%;
+                color: black;
+            }
+            }
+        
+    }
+
+@media screen and (min-width: $desktop)
+{
+.ThumbLoader
+    {
+        width: 340px;        
+        height: 340px;
+        border-radius: 10px;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+}

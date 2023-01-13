@@ -3,6 +3,8 @@
 section
     {
         margin: 21px;
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -17,7 +19,7 @@ section
     box-sizing: border-box;
     background-color: #F6F6F6;
     border-radius: 25px;
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
