@@ -7,8 +7,9 @@ import { useFetch } from '../../Services/LogementService';
 
 function Gallery()
     {
-        const { data, isLoading } = useFetch(`./datas/logements.json`)
-        const [ housingData ] = data
+        const { data, isLoading, error } = useFetch(`./datas/logements.json`)
+
+        if (error) {return <span>Error</span>}
 
         return (
             <section className='Gallery'>
