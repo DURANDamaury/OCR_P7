@@ -1,6 +1,6 @@
 @import "../../styles/Variables.scss";
 
-section
+#gallery
     {
         margin: 21px;
         display: flex;
@@ -11,7 +11,7 @@ section
 //css pour desktop
 @media screen and (min-width: $desktop)
 {
-.Gallery
+#gallery
     {
     width: auto;
     margin: 3% 100px 0px 100px;

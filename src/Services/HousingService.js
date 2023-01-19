@@ -1,5 +1,25 @@
 import { useState, useEffect } from 'react'
 
+// export async function getAllData()
+//     {
+//         const response = await fetch(`./datas/logements.json`)       //fetch from url
+//         const data = await response.json()      //response
+//         return data
+//     }
+
+// export async function getDataById (id)
+//     {
+//         const response = await fetch(`./datas/logements.json`)       //fetch from url
+//         const data = await response.json()      //response
+//         const dataId = data.find(id)
+//         return dataId
+//     }
+
+
+
+
+
+
 //parameter api url to call
 export function useFetch(url) {            
 
@@ -34,5 +54,7 @@ export function useFetch(url) {
         fetchData()                                 //start fetchdata
         }, [url])                                   //call when url change
 
-    return { isLoading, data, error }                      //return state isLoading and data
+        return { isLoading, data, error }                      //return state isLoading and data
 }
+
+
