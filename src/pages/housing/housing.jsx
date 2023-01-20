@@ -3,10 +3,11 @@ import { useParams } from 'react-router-dom';
 import datas from './logements.json'
 
 import './housing.scss'
-import Slideshow from '../../components/slideshow/slideshow';
+import Slideshow from '../../components/Slideshow/Slideshow';
 import Tag from '../../components/Tag/Tag';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import InfoBoxList from '../../components/InfoBox/InfoBoxList';
+import Rate from '../../components/Rate/Rate';
 
 function Housing() 
   {
@@ -40,12 +41,12 @@ function Housing()
 
               <section id='housing_infos_2'>
                 <div id='housing_infos_2_host'>
-                  <div id='housing_infos_2_host_name'>{host_name}</div>
+                  <div id='housing_infos_2_host_name'><span>{host_name}</span></div>
                   <div id='housing_infos_2_host_picture'><img src={host_picture} alt='host'/></div>
                 </div>
 
                 <div id='housing_infos_2_rate'>
-
+                  <Rate rate={rate} />
                 </div>
               </section>
             </div>

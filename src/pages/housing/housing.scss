@@ -37,6 +37,8 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        margin-top: 15px;
+        margin-bottom: 15px;
         &_host
         {
             display: flex;
@@ -65,6 +67,11 @@
                     }
             }
         }
+        &_rate
+        {
+            display: flex;
+            align-items: center;
+        }
     }
 
 @media screen and (min-width: $desktop)
@@ -87,6 +94,9 @@
 
 #housing_infos_block
     {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         &_tags
         {
             display: flex;
@@ -107,17 +117,29 @@
 
 #housing_infos_2
     {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
     &_host
         {
+            height: 64px;
             &_name
                 {
                     font-size: 18px;
+                    display: flex;
+                    align-items: center;
                 }
             &_picture
             {
                 width: 64px;
                 height: 64px;
             }
+        }
+    &_rate
+        {
+            height: 34px;
         }
     }
 

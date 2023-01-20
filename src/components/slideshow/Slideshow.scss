@@ -1,0 +1,20 @@
+#slideshow
+    {
+        height: 255px;
+        margin-left: 21px;
+        margin-right: 21px;
+        overflow: hidden;
+        border-radius: 10px;
+        img 
+            {
+                height: 255px;
+            }
+    }
+.slideshow_picture
+    {
+        display: none;
+    }
+#slideshow_picture_0
+{
+    display: block;
+}

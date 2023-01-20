@@ -15,7 +15,7 @@ function InfoBoxList({title,txt})
                     </div>
                     <div className='InfoBox_txt'>
                         <ul>
-                            {txt.map( (equipment) => (<li>{equipment}</li>) )}
+                            {txt.map( (equipment) => (<li key={equipment}>{equipment}</li>) )}
                         </ul>
                     </div>
     

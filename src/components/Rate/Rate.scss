@@ -1,0 +1,26 @@
+@import '../../styles/Variables.scss';
+
+#rate
+    {
+        img 
+            {
+                width: 15px;
+                padding-right: 5px;
+            }
+        
+        
+    }
+
+@media screen and (min-width: $desktop)
+{
+#rate
+    {
+        img 
+            {
+                width: 30px;
+                padding-right: 5px;
+            }
+        
+        
+    }    
+}
