@@ -15,8 +15,10 @@ function Gallery()
         useEffect(() => {
             fetchData()
                 .then((locations) => {
-                    setData(locations);
-                    setLoading(false);
+                    setTimeout(() => {
+                        setData(locations);
+                        setLoading(false);
+                    }, 2000);
                     })
                 .catch((err) => {
                     setError(err);
@@ -27,15 +29,15 @@ function Gallery()
 //const { data, isLoading, error } = useFetch(`./datas/logements.json`)
 
         if (error) {return <span>Error</span>}
-        console.log (data)
+
 
         return (
             <section id='gallery'>
-                    {
-                    data.map((housing) => (isLoading ? (
-                        <ThumbLoader />) : (<Thumb key={housing.id} id={housing.id} cover={housing.cover} title={housing.title} />)
-                    ))
-                    }                
+                {
+                    isLoading ? <ThumbLoader /> : data.map((housing) => 
+                    (<Thumb key={housing.id} id={housing.id} cover={housing.cover} title={housing.title} />))
+                }
+                    
             </section>
         )
     }
