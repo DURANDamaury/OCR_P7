@@ -4,11 +4,9 @@ function ThumbLoader()
     {
         return (
             <div className="ThumbLoader" >
-                <div className="ThumbLoader_title" >
-                
-                    
-                </div>
-                <div className="ThumbLoader_title_txt"><div>IS LOADING</div></div>
+                <div className="ThumbLoader_title" ></div>
+                <div className="ThumbLoader_title_reflet"></div> 
+                <div className="ThumbLoader_txt"><div>LOADING</div></div>
             </div>
         )
     }

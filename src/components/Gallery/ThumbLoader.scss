@@ -9,7 +9,7 @@
 .ThumbLoader
     {
         width: 100%;        
-        height: 255px; 
+        height: 50px; 
         margin-top: 6%;
         border-radius: 10px;
         background-size: cover;
@@ -19,13 +19,23 @@
             {
                 position: absolute;
                 height: 100%;
-                background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+                background: black;
                 border-radius: 10px;
-                animation: progress_bar infinite 5s linear;
+                animation: progress_bar infinite 2s linear;
                 border-right: 1px solid $pink;
-
+                box-shadow:  inset -3px 3px 16px 0px #fcfcfc, inset 3px -3px 5px 0px #fcfcfc;
+            }
+        &_reflet
+            {
+                top: 10px;
+                position: absolute;
+                width: 100%;
+                background-color: #3f3f3f;
+                display: block;
+                height: 2px;
+            }
                 
-                &_txt
+        &_txt
             {
                 position: absolute;
                 width: 100%;
@@ -34,15 +44,14 @@
                 justify-content: center;
                 align-items: center;
                 box-sizing: border-box;
-                padding: 6%;
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 30px;
                 line-height: 142.6%;
-                color: black;
+                color: gray;
             }
-            }
+            
         
     }
 
@@ -50,10 +59,8 @@
 {
 .ThumbLoader
     {
-        width: 340px;        
-        height: 340px;
-        border-radius: 10px;
+        width: 100%;        
+        height: 50px;
         margin: 0;
-        margin-bottom: 50px;
     }
 }

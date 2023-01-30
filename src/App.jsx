@@ -6,8 +6,8 @@ import Housing from './pages/housing/housing';
 import About from './pages/about/about';
 import P404 from './pages/404/404';
 //
-import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Header from "./components/Header/Header";
 
 
 function App()

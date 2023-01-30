@@ -1,6 +1,6 @@
 import logo from '../../assets/Logo_Orange.svg';
 import "./Header.scss";
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Header() 
     {
@@ -8,8 +8,8 @@ function Header()
             <header className="header">
                 <img className="header_logo" src={logo} alt="logo" />
                 <nav className="header_nav">
-                    <Link to="/">Acceuil</Link>
-                    <Link to="/APropos">A Propos</Link>
+                    <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>Acceuil</NavLink>
+                    <NavLink to="/APropos" className={(nav) => (nav.isActive ? "nav-active" : "")}>A Propos</NavLink>
                 </nav>
             </header>
             )   

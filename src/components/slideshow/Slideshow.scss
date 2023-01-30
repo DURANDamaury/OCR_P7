@@ -58,11 +58,11 @@ button
                 background-size: cover;
             }
     }
-.slideshow_picture_invisible
+.disable
     {
         display: none;
     }
-.slideshow_picture_invisible
+.active
     {
         display: block;
     }
@@ -73,8 +73,8 @@ button
 #slideshow
     {
         height: 415px;
-        margin-left: 21px;
-        margin-right: 21px;
+        margin-left: 100px;
+        margin-right: 100px;
         overflow: hidden;
         border-radius: 10px;
         position: relative;

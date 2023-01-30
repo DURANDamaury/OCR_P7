@@ -17,11 +17,14 @@
             font-size: 12px;
             text-transform: uppercase;
             vertical-align: middle;
-            color: #FF6060;
+            color: $pink;
             text-decoration: none;
         }
     }
-
+.nav-active
+    {
+        border-bottom: solid $pink 2px;
+    }
 
 //css pour desktop
 @media screen and (min-width: $desktop)

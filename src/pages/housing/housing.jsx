@@ -10,6 +10,7 @@ import Rate from '../../components/Rate/Rate';
 import { getLogementById } from '../../Services/HousingService';
 import { useEffect, useState } from 'react';
 import ThumbLoader from '../../components/Gallery/ThumbLoader';
+import Slideshow2 from '../../components/Slideshow/Slideshow2';
 
 function Housing() 
   {
@@ -44,7 +45,7 @@ function Housing()
           isLoading ? 
             (<ThumbLoader/>) : (
               <>
-              <Slideshow pictures={data.pictures} />
+              <Slideshow2 pictures={data.pictures} />
               <div id='housing'>
                 <div id='housing_infos'>
                   <section id='housing_infos_block'>

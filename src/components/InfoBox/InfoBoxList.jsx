@@ -5,7 +5,7 @@ import ButtonOpen from "./Assets/ButtonOpen.png";
 
 function InfoBoxList({title,txt})
     {
-            const [boxState, updateBox] = useState(true);
+            const [boxState, updateBox] = useState(false);
 
             return boxState ? (
                 <div className='InfoBox'>
