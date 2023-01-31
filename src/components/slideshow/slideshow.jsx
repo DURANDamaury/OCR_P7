@@ -16,7 +16,7 @@ function Slideshow({pictures}) {
                 <div id={`slideshow_picture`} className="slideshow_picture" style={{backgroundImage: `url(${pictures[pictureNumber]})`}}></div>
             </div>
             {
-            numberOfPictures && 
+            numberOfPictures>1 && 
             <ArrowSlideshow
                 numberOfPictures={numberOfPictures}
                 pictureNumber={pictureNumber}
