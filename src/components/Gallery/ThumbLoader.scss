@@ -19,9 +19,9 @@
             {
                 position: absolute;
                 height: 100%;
-                background: black;
+                background: $pink;
                 border-radius: 10px;
-                animation: progress_bar infinite 2s linear;
+                animation: progress_bar infinite 3s cubic-bezier(0.54, 0.8, 0.26, -0.17);
                 border-right: 1px solid $pink;
                 box-shadow:  inset -3px 3px 16px 0px #fcfcfc, inset 3px -3px 5px 0px #fcfcfc;
             }

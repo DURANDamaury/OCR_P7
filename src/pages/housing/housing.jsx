@@ -10,6 +10,7 @@ import { getLogementById } from '../../Services/HousingService';
 import { useEffect, useState } from 'react';
 import ThumbLoader from '../../components/Gallery/ThumbLoader';
 import Slideshow from '../../components/Slideshow/Slideshow';
+import P404 from '../404/404'
 
 function Housing() 
   {
@@ -17,10 +18,9 @@ function Housing()
 
     const [data, setData] = useState() ;           //internal state to stock data    
     const [isLoading, setLoading] = useState(true);  //internal state for loading status(true for start)
-    const [error, setError] = useState(false);
-    //ici tu serai besion d'appeler ton service pour recupere les donnes via useEffect :
+    const [error, setError] = useState("");
 
-
+    //service recuperation
     useEffect(() => {
       getLogementById({id})
             .then((house) => {
@@ -31,10 +31,16 @@ function Housing()
                 })
             .catch((err) => {
                 setError(err);
+                console.log(err)
                 });
         }, [id]);
 
 
+
+
+        if (error) {
+          console.log(error);
+          return <P404 />}
 
 
     return (

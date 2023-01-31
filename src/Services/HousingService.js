@@ -26,6 +26,10 @@ export function getLogementById(params)
         .then ((data) => {
             let logement = data.find((housing) => housing.id === params.id)
             //traiter le cas ou le logement est nul
+            if (!logement) 
+            {
+                return Promise.reject('aucun logement trouvé')
+            }
             return logement
         })
         .catch ((err) => {throw err})
