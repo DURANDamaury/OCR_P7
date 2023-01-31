@@ -2,7 +2,6 @@
 import { useParams } from 'react-router-dom';
 
 import './housing.scss'
-import Slideshow from '../../components/Slideshow/Slideshow';
 import Tag from '../../components/Tag/Tag';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import InfoBoxList from '../../components/InfoBox/InfoBoxList';
@@ -10,7 +9,7 @@ import Rate from '../../components/Rate/Rate';
 import { getLogementById } from '../../Services/HousingService';
 import { useEffect, useState } from 'react';
 import ThumbLoader from '../../components/Gallery/ThumbLoader';
-import Slideshow2 from '../../components/Slideshow/Slideshow2';
+import Slideshow from '../../components/Slideshow/Slideshow';
 
 function Housing() 
   {
@@ -45,7 +44,7 @@ function Housing()
           isLoading ? 
             (<ThumbLoader/>) : (
               <>
-              <Slideshow2 pictures={data.pictures} />
+              <Slideshow pictures={data.pictures} />
               <div id='housing'>
                 <div id='housing_infos'>
                   <section id='housing_infos_block'>
