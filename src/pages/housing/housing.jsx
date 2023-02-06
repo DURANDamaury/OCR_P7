@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import './housing.scss'
 import Tag from '../../components/Tag/Tag';
 import InfoBox from '../../components/InfoBox/InfoBox';
-import InfoBoxList from '../../components/InfoBox/InfoBoxList';
 import Rate from '../../components/Rate/Rate';
 import { getLogementById } from '../../Services/HousingService';
 import { useEffect, useState } from 'react';
@@ -74,8 +73,8 @@ function Housing()
                 </div>
 
                 <div id='housing_infosBox'>
-                  <InfoBox title='Description' txt={data.description} />
-                  <InfoBoxList title='Équipements' txt={data.equipments} />
+                  <InfoBox boxType='txt' title='Description' txt={data.description} />
+                  <InfoBox boxType='elementList' title='Équipements' txt={data.equipments} />
                 </div>
               </div>
               </>
