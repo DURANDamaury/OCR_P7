@@ -62,12 +62,12 @@
     }
 .button_true
     {
-        transform:rotate(180deg);
+        transform:rotate(0deg);
         transition:transform 400ms linear
     }
 .button_false
     {
-        transform:rotate(0deg);
+        transform:rotate(180deg);
         transition:transform 400ms linear
     }
 #housing_infosBox .InfoBox
