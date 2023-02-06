@@ -7,25 +7,19 @@ function InfoBoxList({title,txt})
     {
             const [boxState, updateBox] = useState(false);
 
-            return boxState ? (
+            return (
                 <div className='InfoBox'>
                     <div className='InfoBox_title'>
                         {title}
-                        <button onClick={() => updateBox(false)}><img src={ButtonClose} alt="Button Close" /></button>
+                        <button onClick={() => updateBox(!boxState)}><img src={ButtonClose} className={`button_${boxState}`} alt="Button Close" /></button>
                     </div>
+                    {boxState ? (
                     <div className='InfoBox_txt'>
                         <ul>
                             {txt.map( (equipment) => (<li key={equipment}>{equipment}</li>) )}
                         </ul>
-                    </div>
-    
-                </div>
-            ) : (
-                <div className='InfoBox'>
-                    <div className='InfoBox_title'>
-                    {title}
-                    <button onClick={() => updateBox(true)}><img src={ButtonOpen} alt="Button Open" /></button>
-                    </div>
+                    </div>) : null
+                    }
                 </div>
             )
     }

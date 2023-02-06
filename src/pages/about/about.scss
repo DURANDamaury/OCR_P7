@@ -1,0 +1,14 @@
+@import '../../styles/Variables.scss';
+.AboutBoxs
+    {
+        padding-top: 5%;
+    }
+
+
+@media screen and (min-width: $desktop)
+{
+.AboutBoxs
+    {
+        padding-top: 3%;
+    }
+}

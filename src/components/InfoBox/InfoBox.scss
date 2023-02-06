@@ -1,5 +1,11 @@
 @import "../../styles/Variables.scss";
 
+@keyframes rotate_arrow 
+    {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(180deg)}
+    }
+
 .AboutBoxs
     {
         margin-left: 20px;
@@ -8,10 +14,10 @@
 
 .InfoBox
     {
-        width: 100%;
         margin-bottom: 20px;
         background-color: $grey;
         border-radius: 5px;
+        width: 100%;
         &_title
             {
                 background-color: $pink;
@@ -29,6 +35,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
+
+
+
 
                 button 
                     {
@@ -50,6 +60,24 @@
                 
             }
     }
+.button_true
+    {
+        transform:rotate(180deg);
+        transition:transform 400ms linear
+    }
+.button_false
+    {
+        transform:rotate(0deg);
+        transition:transform 400ms linear
+    }
+#housing_infosBox .InfoBox
+    {
+        width: 100%;
+    }
+
+
+
+
 
 //css pour desktop
 @media screen and (min-width: $desktop)
@@ -84,4 +112,9 @@
                 padding-top: 2%;
             }
     }
+#housing_infosBox .InfoBox
+    {
+        width: 48%;
+    }
 }
+
