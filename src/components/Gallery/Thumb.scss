@@ -33,7 +33,9 @@
     }
 .Thumb:hover
 {
-    box-shadow: inset -10px 10px 23px 0px #303030, inset 10px -10px 23px 0px #303030;
+    // box-shadow: inset -10px 10px 23px 0px #303030, inset 10px -10px 23px 0px #303030;
+    transform: scale(105%);
+    transition:transform 300ms linear
 }
 
 @media screen and (min-width: $desktop)
