@@ -7,7 +7,7 @@ import InfoBox from '../../components/InfoBox/InfoBox';
 import Rate from '../../components/Rate/Rate';
 import { getLogementById } from '../../Services/HousingService';
 import { useEffect, useState } from 'react';
-import ThumbLoader from '../../components/Gallery/ThumbLoader';
+import Loader from '../../components/Loader/Loader';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import P404 from '../404/404'
 
@@ -47,7 +47,7 @@ function Housing()
         <main>
           {
           isLoading ? 
-            (<ThumbLoader/>) : (
+            (<Loader/>) : (
               <>
               <Slideshow pictures={data.pictures} />
               <div id='housing'>

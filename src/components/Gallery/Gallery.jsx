@@ -1,6 +1,6 @@
 import './Gallery.scss'
 import Thumb from './Thumb.jsx'
-import ThumbLoader from './ThumbLoader'
+import Loader from '../Loader/Loader'
 
 
 import { useState, useEffect } from 'react'
@@ -34,7 +34,7 @@ function Gallery()
         return (
             <section id='gallery'>
                 {
-                    isLoading ? <ThumbLoader /> : data.map((housing) => 
+                    isLoading ? <Loader /> : data.map((housing) => 
                     (<Thumb key={housing.id} id={housing.id} cover={housing.cover} title={housing.title} />))
                 }
                     

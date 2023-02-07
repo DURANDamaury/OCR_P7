@@ -35,12 +35,10 @@ function InfoBox({title,txt,boxType})
 
                     {/* If state is true InfoBox will be open (exist) */}
                     
-                    {boxState ? (
-                            <div className='InfoBox_txt'>
-                                {boxTXT}
-                            </div>
-                        ) : null
-                    }
+                    <div className={`InfoBox_txt BoxTXT_${boxState}`}>
+                        {boxTXT}
+                    </div>
+                    
                 </div>
             )
     }

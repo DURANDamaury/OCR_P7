@@ -9,7 +9,6 @@
 .InfoBox
     {
         margin-bottom: 20px;
-        background-color: $grey;
         border-radius: 5px;
         width: 100%;
         &_title
@@ -69,6 +68,21 @@
         width: 100%;
     }
 
+.BoxTXT_false
+    {
+        height: 0px;
+        opacity: 0;
+        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+.BoxTXT_true
+    {
+        height: 144px;
+        opacity: 1;
+        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        background-color: $grey;
+    }
+
 
 
 
@@ -101,7 +115,7 @@
             }
         &_txt
             {
-                font-size: 24px;
+                font-size: 18px;
                 padding: 1%;
                 padding-top: 2%;
             }
