@@ -48,8 +48,14 @@
                 font-size: 12px;
                 line-height: 142.6%;
                 text-align: left;
-                padding: 3%;
-                ul {list-style-type: none;}
+                padding: 0%;
+                padding-top: 0%;
+                ul 
+                    {
+                    list-style-type: none;
+                    margin: 0;
+                    padding-inline-start: 0;
+                    }
                 
             }
     }
@@ -67,22 +73,44 @@
     {
         width: 100%;
     }
-
-.BoxTXT_false
+//css opening boxtxt for housing page
+.BoxTXT_housing_false
     {
         height: 0px;
+        padding: 0%;
+        padding-top: 0%;
         opacity: 0;
-        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        transition: height 0.5s ease-in-out 0.25s, opacity 0.5s ease-in-out, padding-top 0.5s ease-in-out 0.25s, padding 0.5s ease-in-out 0.25s;
     }
 
-.BoxTXT_true
+.BoxTXT_housing_true
     {
         height: 144px;
+        padding: 3%;
+        padding-top: 4%;
         opacity: 1;
-        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out 0.25s, padding-top 0.5s ease-in-out, padding 0.5s ease-in-out;
         background-color: $grey;
     }
+//css opening boxtxt for about page
+.BoxTXT_about_false
+    {
+        height: 0px;
+        padding: 0%;
+        padding-top: 0%;
+        opacity: 0;
+        transition: height 0.5s ease-in-out 0.25s, opacity 0.5s ease-in-out, padding-top 0.5s ease-in-out 0.25s, padding 0.5s ease-in-out 0.25s;
+    }
 
+.BoxTXT_about_true
+    {
+        height: 144px;
+        padding: 3%;
+        padding-top: 2%;
+        opacity: 1;
+        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out 0.25s, padding-top 0.5s ease-in-out, padding 0.5s ease-in-out;
+        background-color: $grey;
+    }
 
 
 
@@ -105,7 +133,7 @@
                 height: 47px;
                 font-size: 24px;
                 padding-left: 1%;
-                padding-right: 1%;
+                padding-right: 2%;
 
                 button img
                     {
@@ -116,13 +144,52 @@
         &_txt
             {
                 font-size: 18px;
-                padding: 1%;
-                padding-top: 2%;
+                padding: 0%;
+                padding-top: 0%;
+                font-size: 24px;
+                overflow: hidden;
             }
     }
 #housing_infosBox .InfoBox
     {
         width: 48%;
+    }
+
+.BoxTXT_housing_true
+    {
+        height: 250px;
+        padding: 3%;
+        padding-top: 7%;
+        opacity: 1;
+        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out 0.25s, padding-top 0.5s ease-in-out, padding 0.5s ease-in-out;
+        background-color: $grey;
+    }
+
+.BoxTXT_housing_false
+    {
+        height: 0px;
+        padding: 0%;
+        padding-top: 0%;
+        opacity: 0;
+        transition: height 0.5s ease-in-out 0.25s, opacity 0.5s ease-in-out, padding-top 0.5s ease-in-out 0.25s, padding 0.5s ease-in-out 0.25s;
+    }
+
+.BoxTXT_about_true
+    {
+        height: 170px;
+        padding: 3%;
+        padding-top: 2%;
+        opacity: 1;
+        transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out 0.25s, padding-top 0.5s ease-in-out, padding 0.5s ease-in-out;
+        background-color: $grey;
+    }
+.BoxTXT_about_false
+    {
+        height: 0px;
+        padding: 0%;
+        padding-top: 0%;
+        opacity: 0;
+        transition: height 0.5s ease-in-out 0.25s, opacity 0.5s ease-in-out, padding-top 0.5s ease-in-out 0.25s, padding 0.5s ease-in-out 0.25s;
     }
 }
 

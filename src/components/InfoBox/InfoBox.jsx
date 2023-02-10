@@ -8,7 +8,7 @@ import ButtonClose from "./Assets/ButtonClose.png";
 /* if boxType is not one of this type, 'type inconnu' will be display */
 /* You can add others type */
 
-function InfoBox({title,txt,boxType})
+function InfoBox({title,txt,boxType,page})
     {
             /* state for opening box */
             /* is open= true */
@@ -35,7 +35,7 @@ function InfoBox({title,txt,boxType})
 
                     {/* If state is true InfoBox will be open (exist) */}
                     
-                    <div className={`InfoBox_txt BoxTXT_${boxState}`}>
+                    <div className={`InfoBox_txt BoxTXT_${page}_${boxState}`}>
                         {boxTXT}
                     </div>
                     

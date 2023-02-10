@@ -73,8 +73,8 @@ function Housing()
                 </div>
 
                 <div id='housing_infosBox'>
-                  <InfoBox boxType='txt' title='Description' txt={data.description} />
-                  <InfoBox boxType='elementList' title='Équipements' txt={data.equipments} />
+                  <InfoBox page='housing' boxType='txt' title='Description' txt={data.description} />
+                  <InfoBox page='housing' boxType='elementList' title='Équipements' txt={data.equipments} />
                 </div>
               </div>
               </>
