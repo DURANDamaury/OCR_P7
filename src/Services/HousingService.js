@@ -8,6 +8,7 @@ export function fetchData()
         return fetch(url)
         .then ((res) => {
             //cas d'echec
+            if (!res) {return Promise.reject('Pas de fichier de données ou url inexistante')}
             return res.json();
         
         })
@@ -20,6 +21,7 @@ export function getLogementById(params)
         return fetch(url)
         .then ((res) => {
             //cas d'echec
+            if (!res) {return Promise.reject('Pas de fichier de données ou url inexistante')}
             return res.json();
         
         })
