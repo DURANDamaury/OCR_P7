@@ -1,6 +1,7 @@
 import './Thumb.scss';
 import { Link } from 'react-router-dom'
 
+//Display one Thumb
 function Thumb({id, cover,title})
     {
         return (

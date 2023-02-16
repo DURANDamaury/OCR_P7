@@ -2,7 +2,7 @@
 import leftArrow from './assets/ArrowPrevious.png'
 import rightArrow from './assets/ArrowNext.png'
 
-
+//Arrows display.
 function ArrowSlideshow({setPictureNumber, pictureNumber, numberOfPictures}) 
 {
   // Left arrow gestion

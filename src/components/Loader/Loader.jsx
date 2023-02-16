@@ -1,5 +1,6 @@
 import './Loader.scss';
 
+//loader 
 function Loader()
     {
         return (

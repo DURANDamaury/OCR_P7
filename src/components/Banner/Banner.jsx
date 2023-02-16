@@ -1,4 +1,7 @@
 import './Banner.scss'
+
+//Banner.
+//for this version, text is always display. So, to not see text, you have to send an empty one. 
 function Banner({img,txt})
     {
         return (
