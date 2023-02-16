@@ -1,4 +1,4 @@
-import logo from '../../assets/Logo_Orange.svg';
+import logo from './assets/Logo_Orange.svg';
 import "./Header.scss";
 import { NavLink } from 'react-router-dom'
 

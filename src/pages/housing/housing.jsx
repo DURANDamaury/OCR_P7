@@ -15,14 +15,15 @@ function Housing()
   {
     const { id } = useParams(); // id recovery by url
 
-    const [data, setData] = useState() ;           //internal state to stock data    
-    const [isLoading, setLoading] = useState(true);  //internal state for loading status(true for start)
-    const [error, setError] = useState("");
+    const [data, setData] = useState() ;              //internal state to stock data    
+    const [isLoading, setLoading] = useState(true);   //internal state for loading status(true for start)
+    const [error, setError] = useState("");           //internal state for error when trying to read data
 
-    //service recuperation
+    //data recuperation service
     useEffect(() => {
       getLogementById({id})
             .then((house) => {
+                //timeout is set only for testing. You have to delete it for the final version
                 setTimeout(() => {
                   setData(house);
                   setLoading(false);
@@ -36,16 +37,17 @@ function Housing()
 
 
 
-
+        //if eror state is set
         if (error) {
           console.log(error);
           return <P404 />}
 
-
+    //all is ok, datas are loaded, generate housing page
     return (
       <>
         <main>
           {
+          //loading bar is display if loading state is true else housing infos are display
           isLoading ? 
             (<Loader/>) : (
               <>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './P404.scss'
 
+//404 page
 function P404() 
   {
     return (
